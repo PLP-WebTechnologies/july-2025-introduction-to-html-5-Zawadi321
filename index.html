@@ -3,80 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Building webpages with HTML5">
     <title>HTML5 BASICS</title>
 </head>
 <body>
-     <header>WELCOME TO WENDO BEACH
+     <header>
+        <h1>HTML5 BASIC PRACTICES</h1>
      <nav>
         <ul>
-            <li> <a href="#home">HOME</a></li>
-            <li> <a href="#about">ABOUT</a></li>
-            <li> <a href="#registration">REGISTRATION</a></li>
-            <li> <a href="#gallery">GALLERY</a></li>
-            <li> <a href="#contacts">CONTACT</a></li>
-            
+            <li><a href="#introduction">INTRODUCTION</a></li>
+            <li><a href="#tags">TAGS</a></li>
+            <li><a href="#attributes">ATTRIBUTES</a></li>
+            <li><a href="#seo">SEO</a></li>
+           
         </ul>
      </nav>
-     <img src="beach.jpg" alt="beach">
      </header>
-     <article >
-        <h1 id=about>🌊ABOUT WENDO BEACH🌊</h1>
-        <p>Welcome to Wendo Beach, your ultimate escape to paradise!🤽‍♀️<br>
-            Passionate about peace, calm, serenity and a whole lot of beach vibes,
-            visit us for the ultimate and most memorable experience.🏖️
-            From hidden coves to popular hotspots, our site offers awesome recommendations, travel tips and local insights to help you make the most of every moment.
-            Here at Wendo Beach, the ocean is more than a destination, it is a way of life.⛱️  
-            Come and explore with us. </p>
-     </article>
+     <main id=introduction>
+        <h2>INTRODUCTION TO HTML5</h2>
+        <p>HTML (Hypertext Markup Language) is the standard language for creating web pages.</p>
+        <p>HTML5 is the latest version of HTML, which includes new features, elements and improvements on structure together with support for multimedia (audio and video) for modern web development without needind external plugins.</p>
+        <p>HTML5 is designed to be more efficient, flexible and user-friendly, making it easier for developers to create interactive and dynamic web applications.</p>
+     </main>
 
-    <h2 id=registration>BEACH REGISTRATION FORM</h2>
-    <p>Fill the form below to register for activities, access our newsletter, register for membership or reserve a spot.
-        <br>Ensure you fill in all the fields correctly.</p>
-    </p>
-    <form action="submit">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
-        <br><br>
+     <section id=tags>
+        <h3>TAGS</h3>
+        <p>Tags are semantic elements that provide a better structure for creating and formatting content on a webpage. </p>
+        <p>Container tags usually come in pairs and have opening and closing tags ie;<br>
+            <strong>&lt;opening tag&gt; and &lt;/closing tag&gt;</strong>
+            <br><br>
+            Examples include:
+            <ol>
+                <li>&lt;h1&gt;for main headings&lt;/h1&gt;</li>
+                <li>&lt;p&gt; for paragraphs &lt;/p&gt;</li>
+                <li>&lt;ul&gt; for unordered lists &lt;/ul&gt;</li>
+                <li>&lt;ol&gt; for ordered lists &lt;/ol&gt;</li>
+                <li>&lt;div&gt; for division of content &lt;/div&gt;</li>
+            </ol>   
+        </p>
+        <p>Self-closing tags do not have a closing tag and are used for elements that do not require content inside them. ie;<br>
+            <strong>&lt;tagname (attribute) &gt;</strong>
+            <br><br>
+             Examples include:
+            <ol>
+                <li>&lt;img &gt; for images </li>
+                <li>&lt;br&gt; for line breaks</li>  
+                <li>&lt;input&gt; for form inputs</li>
+                <li>&lt;meta&gt; for metadata</li>
+                <li>&lt;link&gt; for linking external resources</li>
+            </ol>
+            </p>
+     </section>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
-        <br><br>
+     <section id=attributes>
+        <h4>ATTRIBUTES</h4>
+        <p>Attributes provide additional information about an element and are specified within the opening tag.
+            They are used to modify the behavior or appearance of an element.</p>
+        <p>They are written as name="value" pairs. </p>
+        <p>Basic syntax of an attribute:
+            <strong>&lt;tagname attribute="value" &gt;Content &lt;/tagname &gt</strong></p>
+        <p>Common attributes include:</p>
+        <ul>
+            <li><strong>src</strong>: Specifies the source of an image or media file.</li>
+            <li><strong>alt</strong>: Provides alternative text for images.</li>
+            <li><strong>href</strong>: Specifies the URL for links.</li>
+            <li><strong>class</strong>: Assigns a class name to an element for styling purposes.</li>
+            <li><strong>id</strong>: Assigns a unique identifier to an element.</li>
+        </ul>
+        </section>
 
-        <label for="contact">Phone Number:</label>
-        <input type="tel" id="contact" name="contact">
-        <br><br>
+        <section id="seo">
+            <h5>Search Engine Optimization (SEO) </h5>
+            <p>Search Engine Optimization (SEO) is the practice of optimizing web pages to improve their visibility in search engine results.</p>
+            <p>Examples of features in HTML5 that engance SEO include:</p>
+            <ul>
+                <li>Semantic elements (like &lt;header&gt;, &lt;footer&gt;, &lt;article&gt;, &lt;section&gt;) .</li>
+                <li>Use of meta tags (like &lt;meta name="description" content="..."/&gt;).</li>
+                <li>Proper use of headings (H1, H2, etc.).</li>
+                <li>Alt attributes for images.</li>
+            </ul>
+        </section>
 
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username">
-        <br><br>
-
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password">
-        <br><br>
-
-        <label for="confirm-password">Confirm Password:</label>
-        <input type="password" id="confirm-password" name="confirm-password">
-        <br><br>
-
-        <button type="submit">SUBMIT</button>
-       
-    </form>
-
-<h2 id=gallery >Wendo Beach Images</h2>
-    <img src="beach family.jpg" alt="beach-family">
-    <img src="shore.jpg" alt="shore">
-    <img src="water.jpg" alt="water">
-
-<h2 id=contacts>CONTACT US</h2>
-<p>For any inquiries, suggestions or need assistance, feel free to reach out to us on <a href="#contact">+245-102-262-995</a> or through our email at <a href="https://gmail.com">wendobeach@gmail.com.</a>
-     We are here to help!</p>
-   
-
+        <aside >
+        <h6>HTML5 Resources</h6>
+        <ol type="I" >
+            <li><a href="https://www.w3schools.com/html/html5_intro.asp">W3Schools HTML5 Introduction</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">MDN Web Docs - HTML5 Guide</a></li>
+        </ol>
+        </aside>
 
 <footer>
-    <p>&copy; 2023 Wendo Beach. All rights reserved.</p>
-    <p>Follow us on <a href="https://instagram.com">Instagram</a> and on <a href="https://facebook.com">Facebook</a></p>
-    <p>Visit us at <a href="https://maps.google.com">Wendo Beach, Coastal Road</a></p>
+    <p>&copy; 2025 html5. All rights reserved.</p>
     <p>Terms of Service | Privacy Policy</p>
 </footer>
 </body>
